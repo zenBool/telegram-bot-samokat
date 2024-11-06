@@ -1,0 +1,26 @@
+# telegram_bot/pyproject.toml
+
+[tool.poetry]
+name = "telegram_bot"
+version = "0.1.0"
+description = "Automated trading bot using Binance API"
+authors = ["iHOR <zenbool.ua@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aio-pika = "^9.4"
+aiogram = "^3.13"
+pydantic = {extras = ["email"], version = "^2.9.2"}
+pydantic-settings = "^2.4.0"
+asyncio = "^3.4"
+sqlalchemy = {extras = ["all"], version = "^2.0"}
+asyncpg = "^0.29"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
